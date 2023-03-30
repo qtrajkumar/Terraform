@@ -10,7 +10,7 @@ terraform {
     bucket         = "qtremotebackend"
     key            = "Terraform/multiusers"
     dynamodb_table = "terraformlock"
-    region         = "us-west-2"
+    region         = var.region
 
   }
 }
